@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.3.1 (64-bit)
+# SW Build 2035080 on Fri Oct 20 14:20:01 MDT 2017
+# IP Build 2034413 on Fri Oct 20 15:56:25 MDT 2017
+# Start of session at: Mon Nov 27 00:02:15 2017
+# Process ID: 8700
+# Current directory: C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.runs/synth_1
+# Command line: vivado.exe -log toplevel.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source toplevel.tcl
+# Log file: C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.runs/synth_1/toplevel.vds
+# Journal file: C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source toplevel.tcl -notrace

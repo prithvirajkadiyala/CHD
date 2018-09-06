@@ -1,0 +1,84 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
+| Date         : Tue Oct 31 23:59:43 2017
+| Host         : PK-Laptop running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file toplevel_control_sets_placed.rpt
+| Design       : toplevel
+| Device       : xc7a35t
+-------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    22 |
+| Unused register locations in slices containing registers |     8 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              18 |           13 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              22 |            6 |
+| Yes          | No                    | No                     |             144 |           66 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++-------------------------------+-----------------------+------------------+------------------+----------------+
+|          Clock Signal         |     Enable Signal     | Set/Reset Signal | Slice Load Count | Bel Load Count |
++-------------------------------+-----------------------+------------------+------------------+----------------+
+|  clk_IBUF_BUFG                |                       |                  |                1 |              2 |
+|  Data_out_latch1/q[7]_i_2_n_0 |                       |                  |                8 |              8 |
+|  clk_slow_reg_n_0             | src2_addr             |                  |                2 |              8 |
+|  clk_slow_reg_n_0             | led[3]_i_1_n_0        |                  |                4 |              8 |
+|  data_in0_BUFG                |                       |                  |                4 |              8 |
+|  data_in0_BUFG                | reg0/q[7]_i_1__13_n_0 |                  |                3 |              8 |
+|  data_in0_BUFG                | reg1/q[7]_i_1__14_n_0 |                  |                4 |              8 |
+|  data_in0_BUFG                | reg6/q[7]_i_1__11_n_0 |                  |                5 |              8 |
+|  data_in0_BUFG                | reg4/q[7]_i_1__9_n_0  |                  |                4 |              8 |
+|  data_in0_BUFG                | reg5/q[7]_i_1__10_n_0 |                  |                5 |              8 |
+|  data_in0_BUFG                | reg7/q[7]_i_1__8_n_0  |                  |                5 |              8 |
+|  data_in0_BUFG                | reg8/q[7]_i_1__4_n_0  |                  |                3 |              8 |
+|  data_in0_BUFG                | reg9/q[7]_i_1__5_n_0  |                  |                2 |              8 |
+|  data_in0_BUFG                | reg10/q[7]_i_1__6_n_0 |                  |                4 |              8 |
+|  data_in0_BUFG                | reg11/q[7]_i_1_n_0    |                  |                6 |              8 |
+|  data_in0_BUFG                | reg12/q[7]_i_1__1_n_0 |                  |                4 |              8 |
+|  data_in0_BUFG                | reg13/q[7]_i_1__2_n_0 |                  |                2 |              8 |
+|  data_in0_BUFG                | reg14/q[7]_i_1__3_n_0 |                  |                3 |              8 |
+|  data_in0_BUFG                | reg15/q[7]_i_1__0_n_0 |                  |                4 |              8 |
+|  data_in0_BUFG                | reg2/q[7]_i_1__12_n_0 |                  |                3 |              8 |
+|  data_in0_BUFG                | reg3/q[7]_i_1__7_n_0  |                  |                3 |              8 |
+|  clk_IBUF_BUFG                |                       | clk_slow         |                6 |             22 |
++-------------------------------+-----------------------+------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 2      |                     1 |
+| 8      |                    20 |
+| 16+    |                     1 |
++--------+-----------------------+
+
+

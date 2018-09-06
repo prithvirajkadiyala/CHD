@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1510688528">
+  <File Type="PWROPT-DCP" Name="toplevel_pwropt.dcp"/>
+  <File Type="ROUTE-PWR" Name="toplevel_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="toplevel.tcl"/>
+  <File Type="ROUTE-PWR-SUM" Name="toplevel_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="toplevel_reports.tcl"/>
+  <File Type="BG-DRC" Name="toplevel.drc"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="toplevel_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="toplevel_timing_summary_init.rpt"/>
+  <File Type="OPT-HWDEF" Name="toplevel.hwdef"/>
+  <File Type="OPT-DCP" Name="toplevel_opt.dcp"/>
+  <File Type="OPT-DRC" Name="toplevel_drc_opted.rpt"/>
+  <File Type="OPT-TIMING" Name="toplevel_timing_summary_opted.rpt"/>
+  <File Type="PWROPT-DRC" Name="toplevel_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="toplevel_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="toplevel_placed.dcp"/>
+  <File Type="PLACE-IO" Name="toplevel_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="toplevel_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="toplevel_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="toplevel_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="toplevel_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="toplevel_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="toplevel_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="toplevel_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="toplevel_postplace_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="toplevel_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="toplevel_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="toplevel_drc_physopted.rpt"/>
+  <File Type="BG-BIT" Name="toplevel.bit"/>
+  <File Type="PHYSOPT-TIMING" Name="toplevel_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="toplevel_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="toplevel_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="toplevel_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="toplevel_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="toplevel_drc_routed.pb"/>
+  <File Type="BITSTR-MSK" Name="toplevel.msk"/>
+  <File Type="ROUTE-DRC-RPX" Name="toplevel_drc_routed.rpx"/>
+  <File Type="BG-BGN" Name="toplevel.bgn"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="toplevel_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-RBT" Name="toplevel.rbt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="toplevel_methodology_drc_routed.rpx"/>
+  <File Type="BG-BIN" Name="toplevel.bin"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="toplevel_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="toplevel_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="toplevel_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="toplevel_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="toplevel_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="toplevel_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="toplevel_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="toplevel_incremental_reuse_routed.rpt"/>
+  <File Type="RDI-RDI" Name="toplevel.vdi"/>
+  <File Type="ROUTE-CLK" Name="toplevel_clock_utilization_routed.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="toplevel_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="toplevel_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="toplevel_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="toplevel_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="toplevel_timing_summary_postroute_physopted.rpx"/>
+  <File Type="BITSTR-NKY" Name="toplevel.nky"/>
+  <File Type="BITSTR-BMM" Name="toplevel_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="toplevel.mmi"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="toplevel.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="toplevel.sysdef"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/Adder8bit.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/And8bit.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../HW3_1_1/HW3_1_1.srcs/sources_1/new/And8bit.vhd"/>
+        <Attr Name="ImportTime" Val="1509040226"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/AndSinleBit.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../HW3_1_1/HW3_1_1.srcs/sources_1/new/AndSinleBit.vhd"/>
+        <Attr Name="ImportTime" Val="1509039921"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/BinarytoSevenSegment.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../register_file/register_file.srcs/sources_1/imports/new/BinarytoSevenSegment.vhd"/>
+        <Attr Name="ImportTime" Val="1506636657"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/FullAdder.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Downloads/Adder8bit/Adder8bit.srcs/sources_1/new/FullAdder.vhd"/>
+        <Attr Name="ImportTime" Val="1506642912"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/FullSubtract.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../HW3_1_1/HW3_1_1.srcs/sources_1/new/FullSubtract.vhd"/>
+        <Attr Name="ImportTime" Val="1508912289"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/Nand8bit.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../HW3_1_1/HW3_1_1.srcs/sources_1/new/Nand8bit.vhd"/>
+        <Attr Name="ImportTime" Val="1509040758"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/Or8bit.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../HW3_1_1/HW3_1_1.srcs/sources_1/new/Or8bit.vhd"/>
+        <Attr Name="ImportTime" Val="1510272219"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/OrSinleBit.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../HW3_1_1/HW3_1_1.srcs/sources_1/new/OrSinleBit.vhd"/>
+        <Attr Name="ImportTime" Val="1510272095"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/PsuedoRandom.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/SinglebitNand.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../HW3_1_1/HW3_1_1.srcs/sources_1/new/SinglebitNand.vhd"/>
+        <Attr Name="ImportTime" Val="1509040957"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/Subtract8bit.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../HW3_1_1/HW3_1_1.srcs/sources_1/new/Subtract8bit.vhd"/>
+        <Attr Name="ImportTime" Val="1508912825"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/Xor8bit.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../HW3_1_1/HW3_1_1.srcs/sources_1/new/Xor8bit.vhd"/>
+        <Attr Name="ImportTime" Val="1510278492"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/XorSinleBit.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../HW3_1_1/HW3_1_1.srcs/sources_1/new/XorSinleBit.vhd"/>
+        <Attr Name="ImportTime" Val="1510278460"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/adder16bit.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/multiplier8bit.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/register8bit.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../register_file/register_file.srcs/sources_1/new/register8bit.vhd"/>
+        <Attr Name="ImportTime" Val="1506636725"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/toplevel.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="toplevel"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/Livado HWs/Basys3_Master.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../sequence_detection/sequence_detection.srcs/constrs_1/imports/Livado HWs/Basys3_Master.xdc"/>
+        <Attr Name="ImportTime" Val="1505863762"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

@@ -1,0 +1,181 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Thu Oct 26 18:36:39 2017
+# Process ID: 1192
+# Current directory: C:/Users/username/Desktop/HardwareDesignFall2017/InClassExamples/UART
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3840 C:\Users\username\Desktop\HardwareDesignFall2017\InClassExamples\UART\UART.xpr
+# Log file: C:/Users/username/Desktop/HardwareDesignFall2017/InClassExamples/UART/vivado.log
+# Journal file: C:/Users/username/Desktop/HardwareDesignFall2017/InClassExamples/UART\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/username/Desktop/HardwareDesignFall2017/InClassExamples/UART/UART.xpr
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-3] IPUserFilesDir: Could not find the directory 'C:/Users/username/Desktop/HardwareDesignFall2017/InClassExamples/UART/UART.ip_user_files'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.2/data/ip'.
+open_project: Time (s): cpu = 00:00:22 ; elapsed = 00:00:10 . Memory (MB): peak = 821.008 ; gain = 179.645
+update_compile_order -fileset sources_1
+remove_files -fileset fifo_generator_0 C:/Users/username/Desktop/HardwareDesignFall2017/InClassExamples/UART/UART.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.xci
+INFO: [Project 1-386] Moving file 'C:/Users/username/Desktop/HardwareDesignFall2017/InClassExamples/UART/UART.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.xci' from fileset 'fifo_generator_0' to fileset 'sources_1'.
+file delete -force C:/Users/username/Desktop/HardwareDesignFall2017/InClassExamples/UART/UART.srcs/sources_1/ip/fifo_generator_0
+create_ip -name fifo_generator -vendor xilinx.com -library ip -version 13.1 -module_name fifo_generator_0
+set_property -dict [list CONFIG.Fifo_Implementation {Independent_Clocks_Block_RAM} CONFIG.Performance_Options {First_Word_Fall_Through} CONFIG.Input_Data_Width {8} CONFIG.Input_Depth {256} CONFIG.Reset_Pin {false} CONFIG.Output_Data_Width {8} CONFIG.Output_Depth {256} CONFIG.Reset_Type {Asynchronous_Reset} CONFIG.Full_Flags_Reset_Value {0} CONFIG.Use_Dout_Reset {false} CONFIG.Data_Count_Width {8} CONFIG.Write_Data_Count_Width {8} CONFIG.Read_Data_Count_Width {8} CONFIG.Full_Threshold_Assert_Value {255} CONFIG.Full_Threshold_Negate_Value {254} CONFIG.Empty_Threshold_Assert_Value {4} CONFIG.Empty_Threshold_Negate_Value {5}] [get_ips fifo_generator_0]
+generate_target {instantiation_template} [get_files c:/Users/username/Desktop/HardwareDesignFall2017/InClassExamples/UART/UART.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'fifo_generator_0'...
+update_compile_order -fileset sources_1
+generate_target all [get_files  c:/Users/username/Desktop/HardwareDesignFall2017/InClassExamples/UART/UART.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'fifo_generator_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'fifo_generator_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'fifo_generator_0'...
+export_ip_user_files -of_objects [get_files c:/Users/username/Desktop/HardwareDesignFall2017/InClassExamples/UART/UART.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.xci] -no_script -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/username/Desktop/HardwareDesignFall2017/InClassExamples/UART/UART.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.xci]
+launch_run -jobs 2 fifo_generator_0_synth_1
+[Thu Oct 26 18:38:19 2017] Launched fifo_generator_0_synth_1...
+Run output will be captured here: C:/Users/username/Desktop/HardwareDesignFall2017/InClassExamples/UART/UART.runs/fifo_generator_0_synth_1/runme.log
+INFO: [Vivado 12-4357] Exporting simulation files for 'fifo_generator_0'... please wait for 'fifo_generator_0_synth_1' run to finish...
+wait_on_run fifo_generator_0_synth_1
+[Thu Oct 26 18:38:20 2017] Waiting for fifo_generator_0_synth_1 to finish...
+[Thu Oct 26 18:38:25 2017] Waiting for fifo_generator_0_synth_1 to finish...
+[Thu Oct 26 18:38:30 2017] Waiting for fifo_generator_0_synth_1 to finish...
+[Thu Oct 26 18:38:35 2017] Waiting for fifo_generator_0_synth_1 to finish...
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+[Thu Oct 26 18:38:45 2017] Waiting for fifo_generator_0_synth_1 to finish...
+[Thu Oct 26 18:38:45 2017] Interrupt received
+wait_on_run: Time (s): cpu = 00:00:02 ; elapsed = 00:00:25 . Memory (MB): peak = 847.031 ; gain = 0.000
+INFO: [Common 17-344] 'wait_on_run' was cancelled
+generate_target all [get_files  c:/Users/username/Desktop/HardwareDesignFall2017/InClassExamples/UART/UART.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.xci]
+export_ip_user_files -of_objects [get_files c:/Users/username/Desktop/HardwareDesignFall2017/InClassExamples/UART/UART.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.xci] -no_script -force -quiet
+reset_run fifo_generator_0_synth_1
+launch_run  fifo_generator_0_synth_1
+[Thu Oct 26 18:39:11 2017] Launched fifo_generator_0_synth_1...
+Run output will be captured here: C:/Users/username/Desktop/HardwareDesignFall2017/InClassExamples/UART/UART.runs/fifo_generator_0_synth_1/runme.log
+INFO: [Vivado 12-4357] Exporting simulation files for 'fifo_generator_0'... please wait for 'fifo_generator_0_synth_1' run to finish...
+wait_on_run fifo_generator_0_synth_1
+[Thu Oct 26 18:39:11 2017] Waiting for fifo_generator_0_synth_1 to finish...
+[Thu Oct 26 18:39:16 2017] Waiting for fifo_generator_0_synth_1 to finish...
+[Thu Oct 26 18:39:21 2017] Waiting for fifo_generator_0_synth_1 to finish...
+[Thu Oct 26 18:39:26 2017] Waiting for fifo_generator_0_synth_1 to finish...
+[Thu Oct 26 18:39:36 2017] Waiting for fifo_generator_0_synth_1 to finish...
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+[Thu Oct 26 18:39:41 2017] Interrupt received
+wait_on_run: Time (s): cpu = 00:00:01 ; elapsed = 00:00:30 . Memory (MB): peak = 903.434 ; gain = 0.000
+INFO: [Common 17-344] 'wait_on_run' was cancelled
+reset_run synth_1
+launch_runs synth_1
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/username/Desktop/HardwareDesignFall2017/InClassExamples/UART/UART.srcs/sources_1/new/toplevel.vhd" into library xil_defaultlib [C:/Users/username/Desktop/HardwareDesignFall2017/InClassExamples/UART/UART.srcs/sources_1/new/toplevel.vhd:1]
+[Thu Oct 26 18:50:55 2017] Launched synth_1...
+Run output will be captured here: C:/Users/username/Desktop/HardwareDesignFall2017/InClassExamples/UART/UART.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/username/Desktop/HardwareDesignFall2017/InClassExamples/UART/UART.srcs/sources_1/new/toplevel.vhd" into library xil_defaultlib [C:/Users/username/Desktop/HardwareDesignFall2017/InClassExamples/UART/UART.srcs/sources_1/new/toplevel.vhd:1]
+[Thu Oct 26 18:51:57 2017] Launched synth_1...
+Run output will be captured here: C:/Users/username/Desktop/HardwareDesignFall2017/InClassExamples/UART/UART.runs/synth_1/runme.log
+launch_runs impl_1
+[Thu Oct 26 18:52:47 2017] Launched impl_1...
+Run output will be captured here: C:/Users/username/Desktop/HardwareDesignFall2017/InClassExamples/UART/UART.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs synth_1
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/username/Desktop/HardwareDesignFall2017/InClassExamples/UART/UART.srcs/sources_1/new/toplevel.vhd" into library xil_defaultlib [C:/Users/username/Desktop/HardwareDesignFall2017/InClassExamples/UART/UART.srcs/sources_1/new/toplevel.vhd:1]
+[Thu Oct 26 18:56:30 2017] Launched synth_1...
+Run output will be captured here: C:/Users/username/Desktop/HardwareDesignFall2017/InClassExamples/UART/UART.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/username/Desktop/HardwareDesignFall2017/InClassExamples/UART/UART.srcs/sources_1/new/toplevel.vhd" into library xil_defaultlib [C:/Users/username/Desktop/HardwareDesignFall2017/InClassExamples/UART/UART.srcs/sources_1/new/toplevel.vhd:1]
+[Thu Oct 26 18:57:17 2017] Launched synth_1...
+Run output will be captured here: C:/Users/username/Desktop/HardwareDesignFall2017/InClassExamples/UART/UART.runs/synth_1/runme.log
+launch_runs impl_1
+[Thu Oct 26 18:58:06 2017] Launched impl_1...
+Run output will be captured here: C:/Users/username/Desktop/HardwareDesignFall2017/InClassExamples/UART/UART.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream
+[Thu Oct 26 18:59:27 2017] Launched impl_1...
+Run output will be captured here: C:/Users/username/Desktop/HardwareDesignFall2017/InClassExamples/UART/UART.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2016.2
+  **** Build date : Jun  2 2016-16:57:03
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183699412A
+set_property PROGRAM.FILE {C:/Users/username/Desktop/HardwareDesignFall2017/InClassExamples/UART/UART.runs/impl_1/toplevel.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/username/Desktop/HardwareDesignFall2017/InClassExamples/UART/UART.runs/impl_1/toplevel.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_target all [get_files  c:/Users/username/Desktop/HardwareDesignFall2017/InClassExamples/UART/UART.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.xci]
+export_ip_user_files -of_objects  [get_files  c:/Users/username/Desktop/HardwareDesignFall2017/InClassExamples/UART/UART.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.xci] -sync -no_script -force -quiet
+delete_ip_run [get_files -of_objects [get_fileset fifo_generator_0] c:/Users/username/Desktop/HardwareDesignFall2017/InClassExamples/UART/UART.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.xci]
+INFO: [Project 1-386] Moving file 'c:/Users/username/Desktop/HardwareDesignFall2017/InClassExamples/UART/UART.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.xci' from fileset 'fifo_generator_0' to fileset 'sources_1'.
+update_compile_order -fileset sources_1
+generate_target all [get_files  c:/Users/username/Desktop/HardwareDesignFall2017/InClassExamples/UART/UART.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'fifo_generator_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'fifo_generator_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'fifo_generator_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'fifo_generator_0'...
+export_ip_user_files -of_objects [get_files c:/Users/username/Desktop/HardwareDesignFall2017/InClassExamples/UART/UART.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.xci] -no_script -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/username/Desktop/HardwareDesignFall2017/InClassExamples/UART/UART.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.xci]
+launch_run  fifo_generator_0_synth_1
+[Thu Oct 26 19:02:07 2017] Launched fifo_generator_0_synth_1...
+Run output will be captured here: C:/Users/username/Desktop/HardwareDesignFall2017/InClassExamples/UART/UART.runs/fifo_generator_0_synth_1/runme.log
+INFO: [Vivado 12-4357] Exporting simulation files for 'fifo_generator_0'... please wait for 'fifo_generator_0_synth_1' run to finish...
+wait_on_run fifo_generator_0_synth_1
+[Thu Oct 26 19:02:07 2017] Waiting for fifo_generator_0_synth_1 to finish...
+[Thu Oct 26 19:02:12 2017] Waiting for fifo_generator_0_synth_1 to finish...
+[Thu Oct 26 19:02:17 2017] Waiting for fifo_generator_0_synth_1 to finish...
+[Thu Oct 26 19:02:22 2017] Waiting for fifo_generator_0_synth_1 to finish...
+[Thu Oct 26 19:02:33 2017] Waiting for fifo_generator_0_synth_1 to finish...
+[Thu Oct 26 19:02:43 2017] Waiting for fifo_generator_0_synth_1 to finish...
+[Thu Oct 26 19:02:53 2017] Waiting for fifo_generator_0_synth_1 to finish...
+[Thu Oct 26 19:03:03 2017] Waiting for fifo_generator_0_synth_1 to finish...
+[Thu Oct 26 19:03:23 2017] Waiting for fifo_generator_0_synth_1 to finish...
+[Thu Oct 26 19:03:43 2017] Waiting for fifo_generator_0_synth_1 to finish...
+[Thu Oct 26 19:04:03 2017] Waiting for fifo_generator_0_synth_1 to finish...
+[Thu Oct 26 19:04:13 2017] fifo_generator_0_synth_1 finished
+wait_on_run: Time (s): cpu = 00:00:02 ; elapsed = 00:02:06 . Memory (MB): peak = 1024.859 ; gain = 0.000
+export_simulation -of_objects [get_files c:/Users/username/Desktop/HardwareDesignFall2017/InClassExamples/UART/UART.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.xci] -directory C:/Users/username/Desktop/HardwareDesignFall2017/InClassExamples/UART/UART.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/username/Desktop/HardwareDesignFall2017/InClassExamples/UART/UART.ip_user_files -ipstatic_source_dir C:/Users/username/Desktop/HardwareDesignFall2017/InClassExamples/UART/UART.ip_user_files/ipstatic -force -quiet
+reset_run synth_1
+launch_runs synth_1
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/username/Desktop/HardwareDesignFall2017/InClassExamples/UART/UART.srcs/sources_1/new/toplevel.vhd" into library xil_defaultlib [C:/Users/username/Desktop/HardwareDesignFall2017/InClassExamples/UART/UART.srcs/sources_1/new/toplevel.vhd:1]
+[Thu Oct 26 19:05:53 2017] Launched synth_1...
+Run output will be captured here: C:/Users/username/Desktop/HardwareDesignFall2017/InClassExamples/UART/UART.runs/synth_1/runme.log
+launch_runs impl_1
+[Thu Oct 26 19:07:21 2017] Launched impl_1...
+Run output will be captured here: C:/Users/username/Desktop/HardwareDesignFall2017/InClassExamples/UART/UART.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream
+[Thu Oct 26 19:08:46 2017] Launched impl_1...
+Run output will be captured here: C:/Users/username/Desktop/HardwareDesignFall2017/InClassExamples/UART/UART.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/username/Desktop/HardwareDesignFall2017/InClassExamples/UART/UART.runs/impl_1/toplevel.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183699412A
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Oct 26 19:10:59 2017...

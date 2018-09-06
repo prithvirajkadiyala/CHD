@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1510688426">
+  <File Type="PA-TCL" Name="toplevel.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="toplevel_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="toplevel_reports.tcl"/>
+  <File Type="RDS-RDS" Name="toplevel.vds"/>
+  <File Type="RDS-UTIL" Name="toplevel_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="toplevel_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="toplevel.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="toplevel_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="toplevel_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/Adder8bit.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/And8bit.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../HW3_1_1/HW3_1_1.srcs/sources_1/new/And8bit.vhd"/>
+        <Attr Name="ImportTime" Val="1509040226"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/AndSinleBit.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../HW3_1_1/HW3_1_1.srcs/sources_1/new/AndSinleBit.vhd"/>
+        <Attr Name="ImportTime" Val="1509039921"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/BinarytoSevenSegment.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../register_file/register_file.srcs/sources_1/imports/new/BinarytoSevenSegment.vhd"/>
+        <Attr Name="ImportTime" Val="1506636657"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/FullAdder.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Downloads/Adder8bit/Adder8bit.srcs/sources_1/new/FullAdder.vhd"/>
+        <Attr Name="ImportTime" Val="1506642912"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/FullSubtract.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../HW3_1_1/HW3_1_1.srcs/sources_1/new/FullSubtract.vhd"/>
+        <Attr Name="ImportTime" Val="1508912289"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/Nand8bit.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../HW3_1_1/HW3_1_1.srcs/sources_1/new/Nand8bit.vhd"/>
+        <Attr Name="ImportTime" Val="1509040758"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/Or8bit.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../HW3_1_1/HW3_1_1.srcs/sources_1/new/Or8bit.vhd"/>
+        <Attr Name="ImportTime" Val="1510272219"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/OrSinleBit.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../HW3_1_1/HW3_1_1.srcs/sources_1/new/OrSinleBit.vhd"/>
+        <Attr Name="ImportTime" Val="1510272095"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/PsuedoRandom.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/SinglebitNand.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../HW3_1_1/HW3_1_1.srcs/sources_1/new/SinglebitNand.vhd"/>
+        <Attr Name="ImportTime" Val="1509040957"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/Subtract8bit.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../HW3_1_1/HW3_1_1.srcs/sources_1/new/Subtract8bit.vhd"/>
+        <Attr Name="ImportTime" Val="1508912825"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/Xor8bit.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../HW3_1_1/HW3_1_1.srcs/sources_1/new/Xor8bit.vhd"/>
+        <Attr Name="ImportTime" Val="1510278492"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/XorSinleBit.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../HW3_1_1/HW3_1_1.srcs/sources_1/new/XorSinleBit.vhd"/>
+        <Attr Name="ImportTime" Val="1510278460"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/adder16bit.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/multiplier8bit.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/register8bit.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../register_file/register_file.srcs/sources_1/new/register8bit.vhd"/>
+        <Attr Name="ImportTime" Val="1506636725"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/toplevel.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="toplevel"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/Livado HWs/Basys3_Master.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../sequence_detection/sequence_detection.srcs/constrs_1/imports/Livado HWs/Basys3_Master.xdc"/>
+        <Attr Name="ImportTime" Val="1505863762"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

@@ -1,0 +1,627 @@
+
+*** Running vivado
+    with args -log toplevel.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source toplevel.tcl
+
+
+****** Vivado v2017.3.1 (64-bit)
+  **** SW Build 2035080 on Fri Oct 20 14:20:01 MDT 2017
+  **** IP Build 2034413 on Fri Oct 20 15:56:25 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source toplevel.tcl -notrace
+Command: synth_design -top toplevel -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 9620 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 401.277 ; gain = 99.629
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'toplevel' [C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/new/toplevel.vhd:44]
+INFO: [Synth 8-3491] module 'fifo_generator_0' declared at 'C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.runs/synth_1/.Xil/Vivado-8700-PK-Laptop/realtime/fifo_generator_0_stub.vhdl:5' bound to instance 'tx_fifo' of component 'fifo_generator_0' [C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/new/toplevel.vhd:189]
+INFO: [Synth 8-638] synthesizing module 'fifo_generator_0' [C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.runs/synth_1/.Xil/Vivado-8700-PK-Laptop/realtime/fifo_generator_0_stub.vhdl:19]
+INFO: [Synth 8-3491] module 'BinaryToSevenSegment' declared at 'C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/new/BinarytoSevenSegment.vhd:34' bound to instance 'display' of component 'BinaryToSevenSegment' [C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/new/toplevel.vhd:198]
+INFO: [Synth 8-638] synthesizing module 'BinaryToSevenSegment' [C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/new/BinarytoSevenSegment.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'BinaryToSevenSegment' (1#1) [C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/new/BinarytoSevenSegment.vhd:41]
+INFO: [Synth 8-3491] module 'multiplier8bit' declared at 'C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/new/multiplier8bit.vhd:34' bound to instance 'Multiplier' of component 'multiplier8bit' [C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/new/toplevel.vhd:200]
+INFO: [Synth 8-638] synthesizing module 'multiplier8bit' [C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/new/multiplier8bit.vhd:41]
+INFO: [Synth 8-3491] module 'adder16bit' declared at 'C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/adder16bit.vhd:34' bound to instance 'adder_01' of component 'adder16bit' [C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/new/multiplier8bit.vhd:88]
+INFO: [Synth 8-638] synthesizing module 'adder16bit' [C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/adder16bit.vhd:42]
+INFO: [Synth 8-3491] module 'FullAdder' declared at 'C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/FullAdder.vhd:34' bound to instance 'FA0' of component 'FullAdder' [C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/adder16bit.vhd:57]
+INFO: [Synth 8-638] synthesizing module 'FullAdder' [C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/FullAdder.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'FullAdder' (2#1) [C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/FullAdder.vhd:42]
+INFO: [Synth 8-3491] module 'FullAdder' declared at 'C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/FullAdder.vhd:34' bound to instance 'FA1' of component 'FullAdder' [C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/adder16bit.vhd:58]
+INFO: [Synth 8-3491] module 'FullAdder' declared at 'C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/FullAdder.vhd:34' bound to instance 'FA2' of component 'FullAdder' [C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/adder16bit.vhd:59]
+INFO: [Synth 8-3491] module 'FullAdder' declared at 'C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/FullAdder.vhd:34' bound to instance 'FA3' of component 'FullAdder' [C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/adder16bit.vhd:60]
+INFO: [Synth 8-3491] module 'FullAdder' declared at 'C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/FullAdder.vhd:34' bound to instance 'FA4' of component 'FullAdder' [C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/adder16bit.vhd:61]
+INFO: [Synth 8-3491] module 'FullAdder' declared at 'C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/FullAdder.vhd:34' bound to instance 'FA5' of component 'FullAdder' [C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/adder16bit.vhd:62]
+INFO: [Synth 8-3491] module 'FullAdder' declared at 'C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/FullAdder.vhd:34' bound to instance 'FA6' of component 'FullAdder' [C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/adder16bit.vhd:63]
+INFO: [Synth 8-3491] module 'FullAdder' declared at 'C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/FullAdder.vhd:34' bound to instance 'FA7' of component 'FullAdder' [C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/adder16bit.vhd:64]
+INFO: [Synth 8-3491] module 'FullAdder' declared at 'C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/FullAdder.vhd:34' bound to instance 'FA8' of component 'FullAdder' [C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/adder16bit.vhd:65]
+INFO: [Synth 8-3491] module 'FullAdder' declared at 'C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/FullAdder.vhd:34' bound to instance 'FA9' of component 'FullAdder' [C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/adder16bit.vhd:66]
+INFO: [Synth 8-3491] module 'FullAdder' declared at 'C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/FullAdder.vhd:34' bound to instance 'FA10' of component 'FullAdder' [C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/adder16bit.vhd:67]
+INFO: [Synth 8-3491] module 'FullAdder' declared at 'C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/FullAdder.vhd:34' bound to instance 'FA11' of component 'FullAdder' [C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/adder16bit.vhd:68]
+INFO: [Synth 8-3491] module 'FullAdder' declared at 'C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/FullAdder.vhd:34' bound to instance 'FA12' of component 'FullAdder' [C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/adder16bit.vhd:69]
+INFO: [Synth 8-3491] module 'FullAdder' declared at 'C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/FullAdder.vhd:34' bound to instance 'FA13' of component 'FullAdder' [C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/adder16bit.vhd:70]
+INFO: [Synth 8-3491] module 'FullAdder' declared at 'C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/FullAdder.vhd:34' bound to instance 'FA14' of component 'FullAdder' [C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/adder16bit.vhd:71]
+INFO: [Synth 8-3491] module 'FullAdder' declared at 'C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/FullAdder.vhd:34' bound to instance 'FA15' of component 'FullAdder' [C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/adder16bit.vhd:72]
+INFO: [Synth 8-256] done synthesizing module 'adder16bit' (3#1) [C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/adder16bit.vhd:42]
+INFO: [Synth 8-3491] module 'adder16bit' declared at 'C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/adder16bit.vhd:34' bound to instance 'adder_23' of component 'adder16bit' [C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/new/multiplier8bit.vhd:89]
+INFO: [Synth 8-3491] module 'adder16bit' declared at 'C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/adder16bit.vhd:34' bound to instance 'adder_45' of component 'adder16bit' [C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/new/multiplier8bit.vhd:90]
+INFO: [Synth 8-3491] module 'adder16bit' declared at 'C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/adder16bit.vhd:34' bound to instance 'adder_67' of component 'adder16bit' [C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/new/multiplier8bit.vhd:91]
+INFO: [Synth 8-3491] module 'adder16bit' declared at 'C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/adder16bit.vhd:34' bound to instance 'adder_0123' of component 'adder16bit' [C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/new/multiplier8bit.vhd:93]
+INFO: [Synth 8-3491] module 'adder16bit' declared at 'C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/adder16bit.vhd:34' bound to instance 'adder_4567' of component 'adder16bit' [C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/new/multiplier8bit.vhd:94]
+INFO: [Synth 8-3491] module 'adder16bit' declared at 'C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/adder16bit.vhd:34' bound to instance 'adder_01234567' of component 'adder16bit' [C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/new/multiplier8bit.vhd:96]
+INFO: [Synth 8-256] done synthesizing module 'multiplier8bit' (4#1) [C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/new/multiplier8bit.vhd:41]
+INFO: [Synth 8-3491] module 'adder8bit' declared at 'C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/new/Adder8bit.vhd:34' bound to instance 'Adder' of component 'adder8bit' [C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/new/toplevel.vhd:201]
+INFO: [Synth 8-638] synthesizing module 'adder8bit' [C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/new/Adder8bit.vhd:41]
+INFO: [Synth 8-3491] module 'FullAdder' declared at 'C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/FullAdder.vhd:34' bound to instance 'FA0' of component 'FullAdder' [C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/new/Adder8bit.vhd:56]
+INFO: [Synth 8-3491] module 'FullAdder' declared at 'C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/FullAdder.vhd:34' bound to instance 'FA1' of component 'FullAdder' [C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/new/Adder8bit.vhd:57]
+INFO: [Synth 8-3491] module 'FullAdder' declared at 'C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/FullAdder.vhd:34' bound to instance 'FA2' of component 'FullAdder' [C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/new/Adder8bit.vhd:58]
+INFO: [Synth 8-3491] module 'FullAdder' declared at 'C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/FullAdder.vhd:34' bound to instance 'FA3' of component 'FullAdder' [C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/new/Adder8bit.vhd:59]
+INFO: [Synth 8-3491] module 'FullAdder' declared at 'C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/FullAdder.vhd:34' bound to instance 'FA4' of component 'FullAdder' [C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/new/Adder8bit.vhd:60]
+INFO: [Synth 8-3491] module 'FullAdder' declared at 'C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/FullAdder.vhd:34' bound to instance 'FA5' of component 'FullAdder' [C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/new/Adder8bit.vhd:61]
+INFO: [Synth 8-3491] module 'FullAdder' declared at 'C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/FullAdder.vhd:34' bound to instance 'FA6' of component 'FullAdder' [C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/new/Adder8bit.vhd:62]
+INFO: [Synth 8-3491] module 'FullAdder' declared at 'C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/FullAdder.vhd:34' bound to instance 'FA7' of component 'FullAdder' [C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/new/Adder8bit.vhd:63]
+INFO: [Synth 8-256] done synthesizing module 'adder8bit' (5#1) [C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/new/Adder8bit.vhd:41]
+INFO: [Synth 8-3491] module 'adder8bit' declared at 'C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/new/Adder8bit.vhd:34' bound to instance 'AdderImm' of component 'adder8bit' [C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/new/toplevel.vhd:202]
+INFO: [Synth 8-3491] module 'And8bit' declared at 'C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/And8bit.vhd:34' bound to instance 'Ander' of component 'And8bit' [C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/new/toplevel.vhd:203]
+INFO: [Synth 8-638] synthesizing module 'And8bit' [C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/And8bit.vhd:40]
+INFO: [Synth 8-3491] module 'AndSinleBit' declared at 'C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/AndSinleBit.vhd:34' bound to instance 'A0' of component 'AndSinleBit' [C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/And8bit.vhd:51]
+INFO: [Synth 8-638] synthesizing module 'AndSinleBit' [C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/AndSinleBit.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'AndSinleBit' (6#1) [C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/AndSinleBit.vhd:40]
+INFO: [Synth 8-3491] module 'AndSinleBit' declared at 'C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/AndSinleBit.vhd:34' bound to instance 'A1' of component 'AndSinleBit' [C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/And8bit.vhd:52]
+INFO: [Synth 8-3491] module 'AndSinleBit' declared at 'C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/AndSinleBit.vhd:34' bound to instance 'A2' of component 'AndSinleBit' [C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/And8bit.vhd:53]
+INFO: [Synth 8-3491] module 'AndSinleBit' declared at 'C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/AndSinleBit.vhd:34' bound to instance 'A3' of component 'AndSinleBit' [C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/And8bit.vhd:54]
+INFO: [Synth 8-3491] module 'AndSinleBit' declared at 'C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/AndSinleBit.vhd:34' bound to instance 'A4' of component 'AndSinleBit' [C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/And8bit.vhd:55]
+INFO: [Synth 8-3491] module 'AndSinleBit' declared at 'C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/AndSinleBit.vhd:34' bound to instance 'A5' of component 'AndSinleBit' [C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/And8bit.vhd:56]
+INFO: [Synth 8-3491] module 'AndSinleBit' declared at 'C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/AndSinleBit.vhd:34' bound to instance 'A6' of component 'AndSinleBit' [C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/And8bit.vhd:57]
+INFO: [Synth 8-3491] module 'AndSinleBit' declared at 'C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/AndSinleBit.vhd:34' bound to instance 'A7' of component 'AndSinleBit' [C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/And8bit.vhd:58]
+INFO: [Synth 8-256] done synthesizing module 'And8bit' (7#1) [C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/And8bit.vhd:40]
+INFO: [Synth 8-3491] module 'Nand8bit' declared at 'C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/Nand8bit.vhd:34' bound to instance 'Nander' of component 'Nand8bit' [C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/new/toplevel.vhd:204]
+INFO: [Synth 8-638] synthesizing module 'Nand8bit' [C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/Nand8bit.vhd:40]
+INFO: [Synth 8-3491] module 'SinglebitNand' declared at 'C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/SinglebitNand.vhd:34' bound to instance 'NAND0' of component 'SinglebitNand' [C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/Nand8bit.vhd:51]
+INFO: [Synth 8-638] synthesizing module 'SinglebitNand' [C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/SinglebitNand.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'SinglebitNand' (8#1) [C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/SinglebitNand.vhd:40]
+INFO: [Synth 8-3491] module 'SinglebitNand' declared at 'C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/SinglebitNand.vhd:34' bound to instance 'NAND1' of component 'SinglebitNand' [C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/Nand8bit.vhd:52]
+INFO: [Synth 8-3491] module 'SinglebitNand' declared at 'C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/SinglebitNand.vhd:34' bound to instance 'NAND2' of component 'SinglebitNand' [C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/Nand8bit.vhd:53]
+INFO: [Synth 8-3491] module 'SinglebitNand' declared at 'C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/SinglebitNand.vhd:34' bound to instance 'NAND3' of component 'SinglebitNand' [C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/Nand8bit.vhd:54]
+INFO: [Synth 8-3491] module 'SinglebitNand' declared at 'C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/SinglebitNand.vhd:34' bound to instance 'NAND4' of component 'SinglebitNand' [C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/Nand8bit.vhd:55]
+INFO: [Synth 8-3491] module 'SinglebitNand' declared at 'C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/SinglebitNand.vhd:34' bound to instance 'NAND5' of component 'SinglebitNand' [C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/Nand8bit.vhd:56]
+INFO: [Synth 8-3491] module 'SinglebitNand' declared at 'C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/SinglebitNand.vhd:34' bound to instance 'NAND6' of component 'SinglebitNand' [C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/Nand8bit.vhd:57]
+INFO: [Synth 8-3491] module 'SinglebitNand' declared at 'C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/SinglebitNand.vhd:34' bound to instance 'NAND7' of component 'SinglebitNand' [C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/Nand8bit.vhd:58]
+INFO: [Synth 8-256] done synthesizing module 'Nand8bit' (9#1) [C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/Nand8bit.vhd:40]
+INFO: [Synth 8-3491] module 'Subtract8bit' declared at 'C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/Subtract8bit.vhd:34' bound to instance 'Subtractor' of component 'Subtract8bit' [C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/new/toplevel.vhd:205]
+INFO: [Synth 8-638] synthesizing module 'Subtract8bit' [C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/Subtract8bit.vhd:40]
+INFO: [Synth 8-3491] module 'FullSubtract' declared at 'C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/FullSubtract.vhd:34' bound to instance 'FS0' of component 'FullSubtract' [C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/Subtract8bit.vhd:53]
+INFO: [Synth 8-638] synthesizing module 'FullSubtract' [C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/FullSubtract.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'FullSubtract' (10#1) [C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/FullSubtract.vhd:42]
+INFO: [Synth 8-3491] module 'FullSubtract' declared at 'C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/FullSubtract.vhd:34' bound to instance 'FS1' of component 'FullSubtract' [C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/Subtract8bit.vhd:54]
+INFO: [Synth 8-3491] module 'FullSubtract' declared at 'C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/FullSubtract.vhd:34' bound to instance 'FS2' of component 'FullSubtract' [C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/Subtract8bit.vhd:55]
+INFO: [Synth 8-3491] module 'FullSubtract' declared at 'C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/FullSubtract.vhd:34' bound to instance 'FS3' of component 'FullSubtract' [C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/Subtract8bit.vhd:56]
+INFO: [Synth 8-3491] module 'FullSubtract' declared at 'C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/FullSubtract.vhd:34' bound to instance 'FS4' of component 'FullSubtract' [C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/Subtract8bit.vhd:57]
+INFO: [Synth 8-3491] module 'FullSubtract' declared at 'C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/FullSubtract.vhd:34' bound to instance 'FS5' of component 'FullSubtract' [C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/Subtract8bit.vhd:58]
+INFO: [Synth 8-3491] module 'FullSubtract' declared at 'C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/FullSubtract.vhd:34' bound to instance 'FS6' of component 'FullSubtract' [C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/Subtract8bit.vhd:59]
+INFO: [Synth 8-3491] module 'FullSubtract' declared at 'C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/FullSubtract.vhd:34' bound to instance 'FS7' of component 'FullSubtract' [C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/Subtract8bit.vhd:60]
+INFO: [Synth 8-256] done synthesizing module 'Subtract8bit' (11#1) [C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/Subtract8bit.vhd:40]
+INFO: [Synth 8-3491] module 'Or8bit' declared at 'C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/Or8bit.vhd:34' bound to instance 'Orer' of component 'Or8bit' [C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/new/toplevel.vhd:206]
+INFO: [Synth 8-638] synthesizing module 'Or8bit' [C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/Or8bit.vhd:40]
+INFO: [Synth 8-3491] module 'OrSinleBit' declared at 'C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/OrSinleBit.vhd:34' bound to instance 'O0' of component 'OrSinleBit' [C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/Or8bit.vhd:51]
+INFO: [Synth 8-638] synthesizing module 'OrSinleBit' [C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/OrSinleBit.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'OrSinleBit' (12#1) [C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/OrSinleBit.vhd:40]
+INFO: [Synth 8-3491] module 'OrSinleBit' declared at 'C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/OrSinleBit.vhd:34' bound to instance 'O1' of component 'OrSinleBit' [C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/Or8bit.vhd:52]
+INFO: [Synth 8-3491] module 'OrSinleBit' declared at 'C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/OrSinleBit.vhd:34' bound to instance 'O2' of component 'OrSinleBit' [C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/Or8bit.vhd:53]
+INFO: [Synth 8-3491] module 'OrSinleBit' declared at 'C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/OrSinleBit.vhd:34' bound to instance 'O3' of component 'OrSinleBit' [C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/Or8bit.vhd:54]
+INFO: [Synth 8-3491] module 'OrSinleBit' declared at 'C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/OrSinleBit.vhd:34' bound to instance 'O4' of component 'OrSinleBit' [C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/Or8bit.vhd:55]
+INFO: [Synth 8-3491] module 'OrSinleBit' declared at 'C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/OrSinleBit.vhd:34' bound to instance 'O5' of component 'OrSinleBit' [C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/Or8bit.vhd:56]
+INFO: [Synth 8-3491] module 'OrSinleBit' declared at 'C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/OrSinleBit.vhd:34' bound to instance 'O6' of component 'OrSinleBit' [C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/Or8bit.vhd:57]
+INFO: [Synth 8-3491] module 'OrSinleBit' declared at 'C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/OrSinleBit.vhd:34' bound to instance 'O7' of component 'OrSinleBit' [C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/Or8bit.vhd:58]
+INFO: [Synth 8-256] done synthesizing module 'Or8bit' (13#1) [C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/Or8bit.vhd:40]
+INFO: [Synth 8-3491] module 'Xor8bit' declared at 'C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/Xor8bit.vhd:34' bound to instance 'Xorer' of component 'Xor8bit' [C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/new/toplevel.vhd:207]
+INFO: [Synth 8-638] synthesizing module 'Xor8bit' [C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/Xor8bit.vhd:40]
+INFO: [Synth 8-3491] module 'XorSingleBit' declared at 'C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/XorSinleBit.vhd:34' bound to instance 'XO0' of component 'XorSingleBit' [C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/Xor8bit.vhd:51]
+INFO: [Synth 8-638] synthesizing module 'XorSingleBit' [C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/XorSinleBit.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'XorSingleBit' (14#1) [C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/XorSinleBit.vhd:40]
+INFO: [Synth 8-3491] module 'XorSingleBit' declared at 'C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/XorSinleBit.vhd:34' bound to instance 'XO1' of component 'XorSingleBit' [C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/Xor8bit.vhd:52]
+INFO: [Synth 8-3491] module 'XorSingleBit' declared at 'C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/XorSinleBit.vhd:34' bound to instance 'XO2' of component 'XorSingleBit' [C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/Xor8bit.vhd:53]
+INFO: [Synth 8-3491] module 'XorSingleBit' declared at 'C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/XorSinleBit.vhd:34' bound to instance 'XO3' of component 'XorSingleBit' [C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/Xor8bit.vhd:54]
+INFO: [Synth 8-3491] module 'XorSingleBit' declared at 'C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/XorSinleBit.vhd:34' bound to instance 'XO4' of component 'XorSingleBit' [C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/Xor8bit.vhd:55]
+INFO: [Synth 8-3491] module 'XorSingleBit' declared at 'C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/XorSinleBit.vhd:34' bound to instance 'XO5' of component 'XorSingleBit' [C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/Xor8bit.vhd:56]
+INFO: [Synth 8-3491] module 'XorSingleBit' declared at 'C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/XorSinleBit.vhd:34' bound to instance 'XO6' of component 'XorSingleBit' [C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/Xor8bit.vhd:57]
+INFO: [Synth 8-3491] module 'XorSingleBit' declared at 'C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/XorSinleBit.vhd:34' bound to instance 'XO7' of component 'XorSingleBit' [C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/Xor8bit.vhd:58]
+INFO: [Synth 8-256] done synthesizing module 'Xor8bit' (15#1) [C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/imports/new/Xor8bit.vhd:40]
+INFO: [Synth 8-3491] module 'lfsr1' declared at 'C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/new/PsuedoRandom.vhd:34' bound to instance 'Randomizer' of component 'lfsr1' [C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/new/toplevel.vhd:208]
+INFO: [Synth 8-638] synthesizing module 'lfsr1' [C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/new/PsuedoRandom.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'lfsr1' (16#1) [C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/sources_1/new/PsuedoRandom.vhd:42]
+WARNING: [Synth 8-6014] Unused sequential element src1_reg was removed.  [C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/new/toplevel.vhd:352]
+WARNING: [Synth 8-6014] Unused sequential element src2_reg was removed.  [C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/new/toplevel.vhd:353]
+WARNING: [Synth 8-6014] Unused sequential element dest_reg was removed.  [C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/new/toplevel.vhd:354]
+WARNING: [Synth 8-6014] Unused sequential element opcode_reg was removed.  [C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/new/toplevel.vhd:355]
+WARNING: [Synth 8-6014] Unused sequential element value_reg was removed.  [C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/new/toplevel.vhd:356]
+INFO: [Synth 8-256] done synthesizing module 'toplevel' (17#1) [C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/new/toplevel.vhd:44]
+WARNING: [Synth 8-3331] design toplevel has unconnected port sw[15]
+WARNING: [Synth 8-3331] design toplevel has unconnected port sw[14]
+WARNING: [Synth 8-3331] design toplevel has unconnected port sw[13]
+WARNING: [Synth 8-3331] design toplevel has unconnected port sw[12]
+WARNING: [Synth 8-3331] design toplevel has unconnected port sw[11]
+WARNING: [Synth 8-3331] design toplevel has unconnected port sw[10]
+WARNING: [Synth 8-3331] design toplevel has unconnected port sw[9]
+WARNING: [Synth 8-3331] design toplevel has unconnected port sw[8]
+WARNING: [Synth 8-3331] design toplevel has unconnected port sw[7]
+WARNING: [Synth 8-3331] design toplevel has unconnected port sw[6]
+WARNING: [Synth 8-3331] design toplevel has unconnected port sw[5]
+WARNING: [Synth 8-3331] design toplevel has unconnected port sw[4]
+WARNING: [Synth 8-3331] design toplevel has unconnected port sw[3]
+WARNING: [Synth 8-3331] design toplevel has unconnected port sw[2]
+WARNING: [Synth 8-3331] design toplevel has unconnected port sw[1]
+WARNING: [Synth 8-3331] design toplevel has unconnected port sw[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 453.918 ; gain = 152.270
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 453.918 ; gain = 152.270
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.runs/synth_1/.Xil/Vivado-8700-PK-Laptop/dcp3/fifo_generator_0_in_context.xdc] for cell 'tx_fifo'
+Finished Parsing XDC File [C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.runs/synth_1/.Xil/Vivado-8700-PK-Laptop/dcp3/fifo_generator_0_in_context.xdc] for cell 'tx_fifo'
+Parsing XDC File [C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/constrs_1/imports/Basys3/Basys3_Master.xdc]
+WARNING: [Vivado 12-507] No nets matched 'btnC_IBUF'. [C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/constrs_1/imports/Basys3/Basys3_Master.xdc:113]
+Finished Parsing XDC File [C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/constrs_1/imports/Basys3/Basys3_Master.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/constrs_1/imports/Basys3/Basys3_Master.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/toplevel_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/constrs_1/imports/Basys3/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/toplevel_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/toplevel_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.048 . Memory (MB): peak = 792.719 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 792.719 ; gain = 491.070
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 792.719 ; gain = 491.070
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for tx_fifo. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 792.719 ; gain = 491.070
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "clk_1khz" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "clk_1khz" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "registers" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "display_value" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "input1" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "clk_random" won't be mapped to RAM because address size (26) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "half_bit_counter" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "uart_rx_state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "uart_rx_state" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "uart_rx_state" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rx_data" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rx_data" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "full_bit_counter_rx" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "byte_counter" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+WARNING: [Synth 8-327] inferring latch for variable 'an_reg' [C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/new/BinarytoSevenSegment.vhd:130]
+WARNING: [Synth 8-327] inferring latch for variable 'bcd_digit_reg' [C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.srcs/sources_1/imports/new/BinarytoSevenSegment.vhd:135]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 792.719 ; gain = 491.070
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'Adder' (adder8bit) to 'AdderImm'
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     26 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 46    
+	   2 Input      3 Bit       Adders := 2     
+	   2 Input      2 Bit       Adders := 1     
++---XORs : 
+	   3 Input      1 Bit         XORs := 128   
+	   2 Input      1 Bit         XORs := 17    
++---Registers : 
+	               32 Bit    Registers := 1     
+	               26 Bit    Registers := 1     
+	               16 Bit    Registers := 2     
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 5     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 3     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 5     
++---RAMs : 
+	              128 Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     35 Bit        Muxes := 12    
+	   2 Input     31 Bit        Muxes := 1     
+	   2 Input     26 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	  12 Input     16 Bit        Muxes := 1     
+	  12 Input      8 Bit        Muxes := 2     
+	   6 Input      8 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 23    
+	   6 Input      4 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 7     
+	   4 Input      1 Bit        Muxes := 3     
+	  15 Input      1 Bit        Muxes := 4     
+	   7 Input      1 Bit        Muxes := 2     
+	   8 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module toplevel 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     26 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               26 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 4     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 3     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---RAMs : 
+	              128 Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     26 Bit        Muxes := 1     
+	  12 Input     16 Bit        Muxes := 1     
+	  12 Input      8 Bit        Muxes := 2     
+	   6 Input      8 Bit        Muxes := 1     
+	   6 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	  15 Input      1 Bit        Muxes := 4     
+	   7 Input      1 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 4     
+	   8 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 4     
+	   4 Input      1 Bit        Muxes := 2     
+Module BinaryToSevenSegment 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 45    
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     35 Bit        Muxes := 12    
+	   2 Input     31 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 22    
+	   2 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 1     
+Module FullAdder 
+Detailed RTL Component Info : 
++---XORs : 
+	   3 Input      1 Bit         XORs := 1     
+Module FullSubtract 
+Detailed RTL Component Info : 
++---XORs : 
+	   3 Input      1 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 1     
+Module XorSingleBit 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
+Module lfsr1 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "clk_1khz" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "clk_random" won't be mapped to RAM because address size (26) is larger than maximum supported(25)
+WARNING: [Synth 8-3331] design toplevel has unconnected port sw[15]
+WARNING: [Synth 8-3331] design toplevel has unconnected port sw[14]
+WARNING: [Synth 8-3331] design toplevel has unconnected port sw[13]
+WARNING: [Synth 8-3331] design toplevel has unconnected port sw[12]
+WARNING: [Synth 8-3331] design toplevel has unconnected port sw[11]
+WARNING: [Synth 8-3331] design toplevel has unconnected port sw[10]
+WARNING: [Synth 8-3331] design toplevel has unconnected port sw[9]
+WARNING: [Synth 8-3331] design toplevel has unconnected port sw[8]
+WARNING: [Synth 8-3331] design toplevel has unconnected port sw[7]
+WARNING: [Synth 8-3331] design toplevel has unconnected port sw[6]
+WARNING: [Synth 8-3331] design toplevel has unconnected port sw[5]
+WARNING: [Synth 8-3331] design toplevel has unconnected port sw[4]
+WARNING: [Synth 8-3331] design toplevel has unconnected port sw[3]
+WARNING: [Synth 8-3331] design toplevel has unconnected port sw[2]
+WARNING: [Synth 8-3331] design toplevel has unconnected port sw[1]
+WARNING: [Synth 8-3331] design toplevel has unconnected port sw[0]
+INFO: [Synth 8-3886] merging instance 'instruction_reg[16]' (FDE) to 'i_35'
+INFO: [Synth 8-3886] merging instance 'instruction_reg[17]' (FDE) to 'i_34'
+INFO: [Synth 8-3886] merging instance 'instruction_reg[18]' (FDE) to 'i_33'
+INFO: [Synth 8-3886] merging instance 'instruction_reg[19]' (FDE) to 'i_32'
+INFO: [Synth 8-3886] merging instance 'instruction_reg[20]' (FDE) to 'i_31'
+INFO: [Synth 8-3886] merging instance 'instruction_reg[21]' (FDE) to 'i_30'
+INFO: [Synth 8-3886] merging instance 'instruction_reg[22]' (FDE) to 'i_29'
+INFO: [Synth 8-3886] merging instance 'instruction_reg[23]' (FDE) to 'i_28'
+INFO: [Synth 8-3886] merging instance 'i_0/display_value_reg[8]' (FDE) to 'i_0/display_value_reg[15]'
+INFO: [Synth 8-3886] merging instance 'i_0/display_value_reg[9]' (FDE) to 'i_0/display_value_reg[15]'
+INFO: [Synth 8-3886] merging instance 'i_0/display_value_reg[10]' (FDE) to 'i_0/display_value_reg[15]'
+INFO: [Synth 8-3886] merging instance 'i_0/display_value_reg[11]' (FDE) to 'i_0/display_value_reg[15]'
+INFO: [Synth 8-3886] merging instance 'i_0/display_value_reg[12]' (FDE) to 'i_0/display_value_reg[15]'
+INFO: [Synth 8-3886] merging instance 'i_0/display_value_reg[15]' (FDE) to 'i_0/display_value_reg[14]'
+INFO: [Synth 8-3886] merging instance 'i_0/display_value_reg[14]' (FDE) to 'i_0/display_value_reg[13]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\display_value_reg[13] )
+WARNING: [Synth 8-3332] Sequential element (display/an_reg[3]) is unused and will be removed from module toplevel.
+WARNING: [Synth 8-3332] Sequential element (display/an_reg[2]) is unused and will be removed from module toplevel.
+WARNING: [Synth 8-3332] Sequential element (display/an_reg[1]) is unused and will be removed from module toplevel.
+WARNING: [Synth 8-3332] Sequential element (display/an_reg[0]) is unused and will be removed from module toplevel.
+WARNING: [Synth 8-3332] Sequential element (display/bcd_digit_reg[3]) is unused and will be removed from module toplevel.
+WARNING: [Synth 8-3332] Sequential element (display/bcd_digit_reg[2]) is unused and will be removed from module toplevel.
+WARNING: [Synth 8-3332] Sequential element (display/bcd_digit_reg[1]) is unused and will be removed from module toplevel.
+WARNING: [Synth 8-3332] Sequential element (display/bcd_digit_reg[0]) is unused and will be removed from module toplevel.
+WARNING: [Synth 8-3332] Sequential element (display_value_reg[13]) is unused and will be removed from module toplevel.
+WARNING: [Synth 8-3332] Sequential element (instruction_reg[15]) is unused and will be removed from module toplevel.
+WARNING: [Synth 8-3332] Sequential element (instruction_reg[14]) is unused and will be removed from module toplevel.
+WARNING: [Synth 8-3332] Sequential element (instruction_reg[13]) is unused and will be removed from module toplevel.
+WARNING: [Synth 8-3332] Sequential element (instruction_reg[12]) is unused and will be removed from module toplevel.
+WARNING: [Synth 8-3332] Sequential element (instruction_reg[11]) is unused and will be removed from module toplevel.
+WARNING: [Synth 8-3332] Sequential element (instruction_reg[10]) is unused and will be removed from module toplevel.
+WARNING: [Synth 8-3332] Sequential element (instruction_reg[9]) is unused and will be removed from module toplevel.
+WARNING: [Synth 8-3332] Sequential element (instruction_reg[8]) is unused and will be removed from module toplevel.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 792.719 ; gain = 491.070
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++------------+---------------+-----------+----------------------+--------------+
+|Module Name | RTL Object    | Inference | Size (Depth x Width) | Primitives   | 
++------------+---------------+-----------+----------------------+--------------+
+|toplevel    | registers_reg | Implied   | 16 x 8               | RAM32M x 4   | 
++------------+---------------+-----------+----------------------+--------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 792.719 ; gain = 491.070
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (display_value_reg[15]) is unused and will be removed from module toplevel.
+WARNING: [Synth 8-3332] Sequential element (display_value_reg[14]) is unused and will be removed from module toplevel.
+WARNING: [Synth 8-3332] Sequential element (display_value_reg[13]) is unused and will be removed from module toplevel.
+WARNING: [Synth 8-3332] Sequential element (display_value_reg[12]) is unused and will be removed from module toplevel.
+WARNING: [Synth 8-3332] Sequential element (display_value_reg[11]) is unused and will be removed from module toplevel.
+WARNING: [Synth 8-3332] Sequential element (display_value_reg[10]) is unused and will be removed from module toplevel.
+WARNING: [Synth 8-3332] Sequential element (display_value_reg[9]) is unused and will be removed from module toplevel.
+WARNING: [Synth 8-3332] Sequential element (display_value_reg[8]) is unused and will be removed from module toplevel.
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 839.648 ; gain = 538.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping  Report
++------------+---------------+-----------+----------------------+--------------+
+|Module Name | RTL Object    | Inference | Size (Depth x Width) | Primitives   | 
++------------+---------------+-----------+----------------------+--------------+
+|toplevel    | registers_reg | Implied   | 16 x 8               | RAM32M x 4   | 
++------------+---------------+-----------+----------------------+--------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 848.676 ; gain = 547.027
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 848.676 ; gain = 547.027
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 848.676 ; gain = 547.027
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 848.676 ; gain = 547.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 848.676 ; gain = 547.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 848.676 ; gain = 547.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 848.676 ; gain = 547.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+-----------------+----------+
+|      |BlackBox name    |Instances |
++------+-----------------+----------+
+|1     |fifo_generator_0 |         1|
++------+-----------------+----------+
+
+Report Cell Usage: 
++------+------------------------+------+
+|      |Cell                    |Count |
++------+------------------------+------+
+|1     |fifo_generator_0_bbox_0 |     1|
+|2     |BUFG                    |     2|
+|3     |CARRY4                  |    11|
+|4     |LUT1                    |     2|
+|5     |LUT2                    |    25|
+|6     |LUT3                    |    27|
+|7     |LUT4                    |    39|
+|8     |LUT5                    |    35|
+|9     |LUT6                    |    74|
+|10    |RAM32M                  |     4|
+|11    |FDCE                    |     8|
+|12    |FDRE                    |   138|
+|13    |IBUF                    |     3|
+|14    |OBUF                    |    11|
++------+------------------------+------+
+
+Report Instance Areas: 
++------+-------------+---------------------+------+
+|      |Instance     |Module               |Cells |
++------+-------------+---------------------+------+
+|1     |top          |                     |   413|
+|2     |  Randomizer |lfsr1                |    17|
+|3     |  display    |BinaryToSevenSegment |    48|
++------+-------------+---------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 848.676 ; gain = 547.027
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 43 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:00:32 . Memory (MB): peak = 848.676 ; gain = 208.227
+Synthesis Optimization Complete : Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 848.676 ; gain = 547.027
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 18 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 4 instances were transformed.
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 4 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+162 Infos, 66 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 850.707 ; gain = 560.527
+INFO: [Common 17-1381] The checkpoint 'C:/Users/prith/Desktop/ECE/CHD/Livado HWs/UART/UART.runs/synth_1/toplevel.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file toplevel_utilization_synth.rpt -pb toplevel_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 850.707 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Nov 27 00:03:02 2017...

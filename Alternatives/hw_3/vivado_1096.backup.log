@@ -1,0 +1,35 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Thu Oct 26 14:57:47 2017
+# Process ID: 1096
+# Current directory: G:/CHD_HW/hw_3
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3336 G:\CHD_HW\hw_3\hw_3.xpr
+# Log file: G:/CHD_HW/hw_3/vivado.log
+# Journal file: G:/CHD_HW/hw_3\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project G:/CHD_HW/hw_3/hw_3.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.2/data/ip'.
+open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:07 . Memory (MB): peak = 810.234 ; gain = 113.875
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+[Thu Oct 26 14:58:51 2017] Launched synth_1...
+Run output will be captured here: G:/CHD_HW/hw_3/hw_3.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+[Thu Oct 26 14:59:37 2017] Launched synth_1...
+Run output will be captured here: G:/CHD_HW/hw_3/hw_3.runs/synth_1/runme.log
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+[Thu Oct 26 15:02:45 2017] Launched synth_1...
+Run output will be captured here: G:/CHD_HW/hw_3/hw_3.runs/synth_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Oct 26 15:05:14 2017...
